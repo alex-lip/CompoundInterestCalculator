@@ -3,20 +3,27 @@
     <div class="row mainRow">
       <div class="col-md-8">
         <div class="row formula">
-          <div class="col-md-8">Formula</div>
-          <div class="col-md-3">Result</div>
+          <div class="col-md-8">
+            <div class="row">
+            <div class="col-sm-6">Cost of Goods <input type="number" class="inputBox"></div>
+            <div class="col-sm-6">Margin <input type="number" class="inputBox"> </div>
+            
+           
+             </div>
+             </div>
+          <div class="col-md-3">| Sale Price</div>
         </div>
         <div class="row formula">
-          <div class="col-md-8">Formula</div>
-          <div class="col-md-3">Result</div>
+          <div class="col-md-8">Cost of Goods | Sale Price</div>
+          <div class="col-md-3">| Margin</div>
         </div>
         <div class="row formula">
-          <div class="col-md-8">Formula</div>
-          <div class="col-md-3">Result</div>
+          <div class="col-md-8">Cost of Goods | Markup</div>
+          <div class="col-md-3">| Sale Price</div>
         </div>
         <div class="row formula">
-          <div class="col-md-8">Formula</div>
-          <div class="col-md-3">Result</div>
+          <div class="col-md-8">Cost of Goods | Sale Price</div>
+          <div class="col-md-3">| Markup</div>
         </div>
       </div>
       <div class="col-md-3 box">Examples</div>
@@ -57,5 +64,9 @@ input::-webkit-inner-spin-button {
 .formula {
     border: 1px solid rgb(158, 158, 158);
   margin: 10px;
+}
+
+.inputBox {
+  width: 80px;
 }
 </style>
