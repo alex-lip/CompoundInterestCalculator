@@ -5,25 +5,10 @@
   <div id="app" class="container-fluid"> <!-- If you start to get random styling you don't like, remove container from this div -->
     <div id="nav">
       <router-link class="nav-item" v-bind:to="{ name: 'home' }">
-        <i class="fas fa-home"></i> <!-- This is a font awesome icon -->
-        Home 
+        <i class="fas fa-calculator"></i> <!-- This is a font awesome icon -->
+        Cost and Margin
       </router-link>
-      <router-link
-        class="nav-item"
-        v-bind:to="{ name: 'register' }"
-        v-if="!$store.state.token">&nbsp;|&nbsp;Register</router-link>
-      <router-link
-        class="nav-item"
-        v-bind:to="{ name: 'login' }"
-        v-if="!$store.state.token">
-        &nbsp;|&nbsp;Login
-      </router-link>
-      <router-link
-        class="nav-item"
-        v-bind:to="{ name: 'logout' }"
-        v-if="$store.state.token">
-        &nbsp;|&nbsp;Logout
-      </router-link>
+      
     </div>
     <router-view />
   </div>
