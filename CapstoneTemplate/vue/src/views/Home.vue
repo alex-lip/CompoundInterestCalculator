@@ -1,40 +1,46 @@
 <template>
   <div class="home container-sm">
     <div class="row formula">
-      <div class="col-sm-4 box1">
+      <div class="col-sm-4">
         Cost of Goods <input type="number" class="inputBox" v-model="cogs" />
       </div>
-      <div class="col-sm-3 box2">
+      <div class="col-sm-3">
         Margin <input type="number" class="inputBox" v-model="margin" /> %
+      </div>
+      <div class="col-sm-4">Sale Price: {{ cogsMargin }}</div>
+    </div>
+
+
+    <div class="row formula">
+      <div class="col-sm-4">
+        Cost of Goods <input type="number" class="inputBox" v-model="cogs" />
+      </div>
+      <div class="col-sm-3">
+        Sale Price <input type="number" class="inputBox" v-model="margin" />
+      </div>
+      <div class="col-sm-4">Margin: {{ cogsMargin }}</div>
+    </div>
+
+
+    <div class="row formula">
+      <div class="col-sm-4">
+        Cost of Goods <input type="number" class="inputBox" v-model="cogs" />
+      </div>
+      <div class="col-sm-3">
+        Markup <input type="number" class="inputBox" v-model="margin" /> %
       </div>
       <div class="col-sm-4 box3">Sale Price: {{ cogsMargin }}</div>
     </div>
+
+
     <div class="row formula">
-      <div class="col-sm-4 box1">
+      <div class="col-sm-4">
         Cost of Goods <input type="number" class="inputBox" v-model="cogs" />
       </div>
-      <div class="col-sm-3 box2">
-        Margin <input type="number" class="inputBox" v-model="margin" /> %
+      <div class="col-sm-3">
+        Sale Price <input type="number" class="inputBox" v-model="margin" />
       </div>
-      <div class="col-sm-4 box3">Sale Price: {{ cogsMargin }}</div>
-    </div>
-    <div class="row formula">
-      <div class="col-sm-4 box1">
-        Cost of Goods <input type="number" class="inputBox" v-model="cogs" />
-      </div>
-      <div class="col-sm-3 box2">
-        Margin <input type="number" class="inputBox" v-model="margin" /> %
-      </div>
-      <div class="col-sm-4 box3">Sale Price: {{ cogsMargin }}</div>
-    </div>
-    <div class="row formula">
-      <div class="col-sm-4 box1">
-        Cost of Goods <input type="number" class="inputBox" v-model="cogs" />
-      </div>
-      <div class="col-sm-3 box2">
-        Margin <input type="number" class="inputBox" v-model="margin" /> %
-      </div>
-      <div class="col-sm-4 box3">Sale Price: {{ cogsMargin }}</div>
+      <div class="col-sm-4">Margin: {{ cogsMargin }}</div>
     </div>
   </div>
 </template>
