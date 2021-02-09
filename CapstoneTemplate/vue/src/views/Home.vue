@@ -1,15 +1,42 @@
 <template>
   <div class="home container-sm">
-        <div class="row formula">
-              <div class="col-sm-4 box1">
-                Cost of Goods <input type="number" class="inputBox" v-model="cogs"/>
-              </div>
-              <div class="col-sm-3 box2">
-                Margin <input type="number" class="inputBox" v-model="margin" /> %
-              </div>
-              <div class="col-sm-4 box3">Sale Price: {{ marginSalePrice }}</div>
-            </div>
-          </div>
+    <div class="row formula">
+      <div class="col-sm-4 box1">
+        Cost of Goods <input type="number" class="inputBox" v-model="cogs" />
+      </div>
+      <div class="col-sm-3 box2">
+        Margin <input type="number" class="inputBox" v-model="margin" /> %
+      </div>
+      <div class="col-sm-4 box3">Sale Price: {{ cogsMargin }}</div>
+    </div>
+    <div class="row formula">
+      <div class="col-sm-4 box1">
+        Cost of Goods <input type="number" class="inputBox" v-model="cogs" />
+      </div>
+      <div class="col-sm-3 box2">
+        Margin <input type="number" class="inputBox" v-model="margin" /> %
+      </div>
+      <div class="col-sm-4 box3">Sale Price: {{ cogsMargin }}</div>
+    </div>
+    <div class="row formula">
+      <div class="col-sm-4 box1">
+        Cost of Goods <input type="number" class="inputBox" v-model="cogs" />
+      </div>
+      <div class="col-sm-3 box2">
+        Margin <input type="number" class="inputBox" v-model="margin" /> %
+      </div>
+      <div class="col-sm-4 box3">Sale Price: {{ cogsMargin }}</div>
+    </div>
+    <div class="row formula">
+      <div class="col-sm-4 box1">
+        Cost of Goods <input type="number" class="inputBox" v-model="cogs" />
+      </div>
+      <div class="col-sm-3 box2">
+        Margin <input type="number" class="inputBox" v-model="margin" /> %
+      </div>
+      <div class="col-sm-4 box3">Sale Price: {{ cogsMargin }}</div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -20,17 +47,24 @@ export default {
       cogs: 0,
       margin: 0,
       salePrice: 0,
-    }
+    };
   },
   computed: {
-    marginSalePrice() {
+    cogsMargin() {
       if (this.margin === 0) {
         return 0;
       } else {
-        return (this.cogs / (1 -(this.margin/100)));
+        return this.cogs / (1 - this.margin / 100);
       }
-    }
-  }
+    },
+    cogsSalePrice() {
+      if (this.margin === 0) {
+        return 0;
+      } else {
+        return this.cogs / (1 - this.margin / 100);
+      }
+    },
+  },
 };
 </script>
 
