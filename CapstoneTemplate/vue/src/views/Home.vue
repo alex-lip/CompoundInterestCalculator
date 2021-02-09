@@ -84,6 +84,7 @@ input::-webkit-inner-spin-button {
   padding: 15px 2px;
   font-size: 22px;
   background-color: white;
+  margin: 20px 20px 20px 0px;
 }
 
 .inputBox {
