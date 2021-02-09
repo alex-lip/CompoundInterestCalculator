@@ -3,14 +3,14 @@
      See https://getbootstrap.com/docs/4.5/getting-started/introduction/ for reference on bootstrap -->
 <template>
   <div id="app" class="container-fluid"> <!-- If you start to get random styling you don't like, remove container from this div -->
-    <div id="nav">
-      <router-link class="nav-item" v-bind:to="{ name: 'home' }">
-        <i class="fas fa-calculator"></i> <!-- This is a font awesome icon -->
-        Cost and Margin
+    <nav class="navbar navbar-light bg-light justify-content-between">
+      <router-link class="navbar-brand" v-bind:to="{ name: 'home' }">
+        Margin Calculator
       </router-link>
-      
-    </div>
-    <router-view />
+      </nav>
+      <router-view />
+    
+    
   </div>
 </template>
 
@@ -34,6 +34,10 @@ export default {
 
 #nav {
   background-color: white;
+}
+
+.navbar-brand {
+  color: black;
 }
 
 </style>
