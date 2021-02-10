@@ -100,7 +100,7 @@ input::-webkit-inner-spin-button {
 }
 
 .formula {
-  border: 1px solid rgb(223, 223, 223);
+  border: 1px solid rgb(172, 172, 172);
   padding: 15px 2px;
   font-size: 22px;
   background-color: white;

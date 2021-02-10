@@ -30,6 +30,7 @@ export default {
 
 .container-fluid {
   background-color: rgb(240, 240, 240);
+  padding-bottom: 50px;
 }
 
 #nav {
