@@ -2,7 +2,7 @@
   <div class="home container-sm">
     <div class="row formula">
       <div class="col-sm-4">
-        Cost of Goods <input type="number" class="inputBox" v-model="cogs" />
+        Cost of Goods <input type="number" class="inputBox" v-model="cogs1" />
       </div>
       <div class="col-sm-3">
         Margin <input type="number" class="inputBox" v-model="margin" /> %
@@ -13,12 +13,12 @@
 
     <div class="row formula">
       <div class="col-sm-4">
-        Cost of Goods <input type="number" class="inputBox" v-model="cogs" />
+        Cost of Goods <input type="number" class="inputBox" v-model="cogs2" />
       </div>
       <div class="col-sm-3">
-        Sale Price <input type="number" class="inputBox" v-model="margin" />
+        Sale Price <input type="number" class="inputBox" v-model="salePrice1" />
       </div>
-      <div class="col-sm-4">Margin: {{ cogsSalePriceMargin }}</div>
+      <div class="col-sm-4">Margin: {{ cogsSalePriceMargin }}%</div>
     </div>
 
 
@@ -50,9 +50,13 @@ export default {
   name: "home",
   data() {
     return {
-      cogs: 0,
+      cogs1: 0,
+      cogs2: 0,
+      cogs3: 0,
+      cogs4: 0,
       margin: 0,
-      salePrice: 0,
+      salePrice1: 0,
+      salePrice2: 0,
     };
   },
   computed: {
@@ -60,14 +64,14 @@ export default {
       if (this.margin === 0) {
         return 0;
       } else {
-        return this.cogs / (1 - this.margin / 100);
+        return this.cogs1 / (1 - this.margin / 100);
       }
     },
-    cogsSalePrice() {
-      if (this.margin === 0) {
+    cogsSalePriceMargin() {
+      if (this.salePrice1 === 0) {
         return 0;
       } else {
-        return this.cogs / (1 - this.margin / 100);
+        return ((this.salePrice1 - this.cogs2) / this.salePrice1) * 100;
       }
     },
   },
