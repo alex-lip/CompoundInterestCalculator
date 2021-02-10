@@ -24,10 +24,10 @@
 
     <div class="row formula">
       <div class="col-sm-4">
-        Cost of Goods <input type="number" class="inputBox" v-model="cogs" />
+        Cost of Goods <input type="number" class="inputBox" v-model="cogs3" />
       </div>
       <div class="col-sm-3">
-        Markup <input type="number" class="inputBox" v-model="margin" /> %
+        Markup <input type="number" class="inputBox" v-model="markup" /> %
       </div>
       <div class="col-sm-4 box3">Sale Price: {{ cogsMarkup }}</div>
     </div>
@@ -35,10 +35,10 @@
 
     <div class="row formula">
       <div class="col-sm-4">
-        Cost of Goods <input type="number" class="inputBox" v-model="cogs" />
+        Cost of Goods <input type="number" class="inputBox" v-model="cogs4" />
       </div>
       <div class="col-sm-3">
-        Sale Price <input type="number" class="inputBox" v-model="margin" />
+        Sale Price <input type="number" class="inputBox" v-model="salePrice2" />
       </div>
       <div class="col-sm-4">Margin: {{ cogsSalePriceMarkup }}</div>
     </div>
@@ -55,6 +55,7 @@ export default {
       cogs3: 0,
       cogs4: 0,
       margin: 0,
+      markup: 0,
       salePrice1: 0,
       salePrice2: 0,
     };
@@ -72,6 +73,15 @@ export default {
         return 0;
       } else {
         return ((this.salePrice1 - this.cogs2) / this.salePrice1) * 100;
+      }
+    },
+    cogsMarkup() {
+      if (this.markup === 0) {
+        return 0;
+      } else {
+        var MarkupPercentage = this.markup/100;
+        var CogsMarkupResult = (this.cogs3 * MarkupPercentage);
+        return CogsMarkupResult + this.cogs3;
       }
     },
   },
