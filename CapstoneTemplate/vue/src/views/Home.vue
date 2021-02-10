@@ -18,7 +18,7 @@
       <div class="col-sm-3">
         Sale Price <input type="number" class="inputBox" v-model="margin" />
       </div>
-      <div class="col-sm-4">Margin: {{ cogsMargin }}</div>
+      <div class="col-sm-4">Margin: {{ cogsSalePriceMargin }}</div>
     </div>
 
 
@@ -29,7 +29,7 @@
       <div class="col-sm-3">
         Markup <input type="number" class="inputBox" v-model="margin" /> %
       </div>
-      <div class="col-sm-4 box3">Sale Price: {{ cogsMargin }}</div>
+      <div class="col-sm-4 box3">Sale Price: {{ cogsMarkup }}</div>
     </div>
 
 
@@ -40,7 +40,7 @@
       <div class="col-sm-3">
         Sale Price <input type="number" class="inputBox" v-model="margin" />
       </div>
-      <div class="col-sm-4">Margin: {{ cogsMargin }}</div>
+      <div class="col-sm-4">Margin: {{ cogsSalePriceMarkup }}</div>
     </div>
   </div>
 </template>
