@@ -1,9 +1,6 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Home from "../views/Home.vue";
-import Login from "../views/Login.vue";
-import Logout from "../views/Logout.vue";
-import Register from "../views/Register.vue";
 import store from "../store/index";
 
 Vue.use(Router);
@@ -28,31 +25,7 @@ const router = new Router({
       meta: {
         requiresAuth: false,
       },
-    },
-    {
-      path: "/login",
-      name: "login",
-      component: Login,
-      meta: {
-        requiresAuth: false,
-      },
-    },
-    {
-      path: "/logout",
-      name: "logout",
-      component: Logout,
-      meta: {
-        requiresAuth: false,
-      },
-    },
-    {
-      path: "/register",
-      name: "register",
-      component: Register,
-      meta: {
-        requiresAuth: false,
-      },
-    },
+    }, 
     {
       path: "*",
       redirect: "/",
@@ -71,6 +44,6 @@ router.beforeEach((to, from, next) => {
     // Else let them go to their next destination
     next();
   }
-});
+}); 
 
 export default router;
