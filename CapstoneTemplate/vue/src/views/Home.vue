@@ -109,11 +109,12 @@ input::-webkit-inner-spin-button {
   padding: 15px 2px;
   font-size: 22px;
   background-color: white;
-  margin: 20px 20px 20px 0px;
+  margin: 10px;
 }
 
 .inputBox {
   width: 80px;
+  margin: 3px;
 }
 /*
 .box1 {
