@@ -40,7 +40,7 @@
       <div class="col-sm-3">
         Sale Price <input type="number" class="inputBox" v-model="salePrice2" />
       </div>
-      <div class="col-sm-4">Margin: {{ cogsSalePriceMarkup }}</div>
+      <div class="col-sm-4">Markup: {{ cogsSalePriceMarkup }}%</div>
     </div>
   </div>
 </template>
@@ -80,6 +80,13 @@ export default {
         return 0;
       } else {
         return parseInt(this.markup / 100) * this.cogs3 + parseInt(this.cogs3);
+      }
+    },
+    cogsSalePriceMarkup() {
+      if (this.salePrice2 === 0) {
+        return 0;
+      } else {
+        return this.salePrice2 - this.cogs4;
       }
     },
   },
