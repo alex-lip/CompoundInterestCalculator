@@ -79,9 +79,7 @@ export default {
       if (this.markup === 0) {
         return 0;
       } else {
-        var MarkupPercentage = this.markup/100;
-        var CogsMarkupResult = (this.cogs3 * MarkupPercentage);
-        return CogsMarkupResult + this.cogs3;
+        return parseInt(this.markup / 100) * this.cogs3 + parseInt(this.cogs3);
       }
     },
   },
