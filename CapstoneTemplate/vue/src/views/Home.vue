@@ -152,7 +152,7 @@ input::-webkit-inner-spin-button {
 }
 
 .mainRow {
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 .formula {
