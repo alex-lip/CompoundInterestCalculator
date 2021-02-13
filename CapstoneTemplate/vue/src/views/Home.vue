@@ -81,28 +81,28 @@ export default {
       if (this.margin === 0) {
         return 0;
       } else {
-        return this.cogs1 / (1 - this.margin / 100);
+        return Math.round(this.cogs1 / (1 - this.margin / 100) * 100) / 100;
       }
     },
     cogsSalePriceMargin() {
       if (this.salePrice1 === 0) {
         return 0;
       } else {
-        return ((this.salePrice1 - this.cogs2) / this.salePrice1) * 100;
+        return Math.round((((this.salePrice1 - this.cogs2) / this.salePrice1) * 100) * 100) /100;
       }
     },
     cogsMarkup() {
       if (this.markup === 0) {
         return 0;
       } else {
-        return parseInt(this.markup / 100) * this.cogs3 + parseInt(this.cogs3);
+        return (this.markup / 100) * this.cogs3 + parseInt(this.cogs3);
       }
     },
     cogsSalePriceMarkup() {
       if (this.salePrice2 === 0) {
         return 0;
       } else {
-        return this.salePrice2 - this.cogs4;
+        return ((this.salePrice2 - this.cogs4) / (this.cogs4)) * 100;
       }
     },
   },
