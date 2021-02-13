@@ -48,7 +48,15 @@
           <div class="col-sm-4">Markup: {{ cogsSalePriceMarkup }}%</div>
         </div>
       </div>
-      <div class="col-sm-3 formula">Examples</div>
+      <div class="col-sm-3 formula">
+        <p class="exampleHeader">Margin Examples</p>
+        <p class="exampleProblem">Cost: $50 Margin: 25%</p>
+        <p class="exampleProblem">Cost: $100 Sale Price: $150</p><hr />
+      
+        <p class="exampleHeader">Markup Examples</p>
+        <p class="exampleProblem">Cost: $50 Markup: 200%</p>
+        <p class="exampleProblem">Cost: $75 Sale Price: $300</p>
+      </div>
     </div>
   </div>
 </template>
@@ -114,7 +122,8 @@ input::-webkit-inner-spin-button {
 
 .formula {
   border: 1px solid rgb(172, 172, 172);
-  padding: 15px 2px;
+  box-shadow: 2px 2px 2px rgb(209, 209, 209);
+  padding: 10px;
   font-size: 18px;
   background-color: white;
   margin: 10px;
@@ -124,18 +133,17 @@ input::-webkit-inner-spin-button {
   width: 50px;
   margin: 3px;
 }
-/*
-.box1 {
-  background-color: red;
+
+.exampleHeader {
+  font-size: 18px;
+  font-weight: 700;
+  padding-left: 2px;
+  margin: 5px;
 }
 
-.box2 {
-  background-color: blue;
+.exampleProblem {
+  padding-left: 10px;
+  margin: 1px;
 }
 
-.box3 {
-  background-color: green;
-}
-
-*/
 </style>

@@ -29,7 +29,7 @@ export default {
 }
 
 .container-fluid {
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(250, 250, 250);
   padding-bottom: 50px;
 }
 
