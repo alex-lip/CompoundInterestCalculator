@@ -50,13 +50,44 @@
       </div>
       <div class="col-sm-3 formula">
         <p class="exampleHeader">Margin Examples</p>
-        <p class="exampleProblem" v-on:click="change(cogs1 = 50, margin = 25)">Cost: $50 Margin: 25%</p>
-        <p class="exampleProblem" v-on:click="change(cogs2 = 100, salePrice1 = 150)">Cost: $100 Sale Price: $150</p><hr />
-      
+        <p
+          class="exampleProblem"
+          v-on:click="change((cogs1 = 50), (margin = 25))"
+        >
+          Cost: $50 Margin: 25%
+        </p>
+        <p
+          class="exampleProblem"
+          v-on:click="change((cogs2 = 100), (salePrice1 = 150))"
+        >
+          Cost: $100 Sale Price: $150
+        </p>
+        <hr />
+
         <p class="exampleHeader">Markup Examples</p>
-        <p class="exampleProblem" v-on:click="change(cogs3 = 50, markup = 200)">Cost: $50 Markup: 200%</p>
-        <p class="exampleProblem" v-on:click="change(cogs4 = 75, salePrice2 = 300)">Cost: $75 Sale Price: $300</p>
+        <p
+          class="exampleProblem"
+          v-on:click="change((cogs3 = 50), (markup = 200))"
+        >
+          Cost: $50 Markup: 200%
+        </p>
+        <p
+          class="exampleProblem"
+          v-on:click="change((cogs4 = 75), (salePrice2 = 300))"
+        >
+          Cost: $75 Sale Price: $300
+        </p>
       </div>
+    </div>
+    <div class="row mainRow">
+      <div class="col-sm-8">
+        <h1>Margin vs. Markup</h1>
+        <p>Profit margin and markup are separate accounting terms that use the same inputs and analyze the same transaction, yet they show different information.</p>
+        <p>Profit margin refers to the revenue a company makes after paying the cost of goods sold (COGS).</p>
+        <p>Markup is the retail price for a product minus its cost.</p>
+        Source: <a href="https://www.investopedia.com/ask/answers/102714/whats-difference-between-profit-margin-and-markup.asp">Investopedia.com</a>
+      </div>
+      <div class="col-sm-4"></div>
     </div>
   </div>
 </template>
@@ -81,14 +112,18 @@ export default {
       if (this.margin === 0) {
         return 0;
       } else {
-        return Math.round(this.cogs1 / (1 - this.margin / 100) * 100) / 100;
+        return Math.round((this.cogs1 / (1 - this.margin / 100)) * 100) / 100;
       }
     },
     cogsSalePriceMargin() {
       if (this.salePrice1 === 0) {
         return 0;
       } else {
-        return Math.round((((this.salePrice1 - this.cogs2) / this.salePrice1) * 100) * 100) /100;
+        return (
+          Math.round(
+            ((this.salePrice1 - this.cogs2) / this.salePrice1) * 100 * 100
+          ) / 100
+        );
       }
     },
     cogsMarkup() {
@@ -102,7 +137,7 @@ export default {
       if (this.salePrice2 === 0) {
         return 0;
       } else {
-        return ((this.salePrice2 - this.cogs4) / (this.cogs4)) * 100;
+        return ((this.salePrice2 - this.cogs4) / this.cogs4) * 100;
       }
     },
   },
@@ -144,12 +179,10 @@ input::-webkit-inner-spin-button {
 .exampleProblem {
   padding-left: 10px;
   margin: 1px;
-  color:rgb(0, 0, 204);
+  color: rgb(0, 0, 204);
 }
 
 .exampleProblem:hover {
   text-decoration: underline;
-
 }
-
 </style>
