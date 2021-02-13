@@ -130,7 +130,7 @@ input::-webkit-inner-spin-button {
 }
 
 .inputBox {
-  width: 50px;
+  width: 60px;
   margin: 3px;
 }
 
@@ -144,6 +144,12 @@ input::-webkit-inner-spin-button {
 .exampleProblem {
   padding-left: 10px;
   margin: 1px;
+  color:rgb(0, 0, 204);
+}
+
+.exampleProblem:hover {
+  text-decoration: underline;
+
 }
 
 </style>
