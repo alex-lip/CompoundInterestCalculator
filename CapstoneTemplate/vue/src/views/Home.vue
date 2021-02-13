@@ -50,12 +50,12 @@
       </div>
       <div class="col-sm-3 formula">
         <p class="exampleHeader">Margin Examples</p>
-        <p class="exampleProblem">Cost: $50 Margin: 25%</p>
-        <p class="exampleProblem">Cost: $100 Sale Price: $150</p><hr />
+        <p class="exampleProblem" v-on:click="change(cogs1 = 50, margin = 25)">Cost: $50 Margin: 25%</p>
+        <p class="exampleProblem" v-on:click="change(cogs2 = 100, salePrice1 = 150)">Cost: $100 Sale Price: $150</p><hr />
       
         <p class="exampleHeader">Markup Examples</p>
-        <p class="exampleProblem">Cost: $50 Markup: 200%</p>
-        <p class="exampleProblem">Cost: $75 Sale Price: $300</p>
+        <p class="exampleProblem" v-on:click="change(cogs3 = 50, markup = 200)">Cost: $50 Markup: 200%</p>
+        <p class="exampleProblem" v-on:click="change(cogs4 = 75, salePrice2 = 300)">Cost: $75 Sale Price: $300</p>
       </div>
     </div>
   </div>
