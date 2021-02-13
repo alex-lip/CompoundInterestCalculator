@@ -5,7 +5,7 @@
   <div id="app" class="container-fluid"> <!-- If you start to get random styling you don't like, remove container from this div -->
     <nav class="navbar navbar-light bg-light justify-content-between">
       <router-link class="navbar-brand" v-bind:to="{ name: 'home' }">
-        🧮 Margin Calculator
+        🧮 Margin and Markup Calculator
       </router-link>
       </nav>
       <router-view />

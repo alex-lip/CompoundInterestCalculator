@@ -3,14 +3,14 @@
     <div class="row mainRow">
       <div class="col-sm-8">
         <div class="row formula">
-          <div class="col-5">
+          <div class="col-5 item">
             Cost of Goods
             <input type="number" class="inputBox" v-model="cogs1" />
           </div>
-          <div class="col-4">
+          <div class="col-4 item">
             Margin %<input type="number" class="inputBox" v-model="margin" />
           </div>
-          <div class="col-3 result">Sale Price: {{ cogsMargin }}</div>
+          <div class="col-3 item result">Sale Price: {{ cogsMargin }}</div>
         </div>
 
         <div class="row formula">
@@ -156,7 +156,7 @@ input::-webkit-inner-spin-button {
 }
 
 .formula {
-  border: 1px solid rgb(172, 172, 172);
+  border: 1px solid rgb(230, 230, 230);
   box-shadow: 2px 2px 2px rgb(209, 209, 209);
   padding: 5px;
   font-size: 18px;
@@ -167,6 +167,12 @@ input::-webkit-inner-spin-button {
 .inputBox {
   width: 60px;
   margin: 3px;
+  display:inline-block;
+}
+
+.item {
+  display: inline-block;
+  justify-content: baseline;
 }
 
 .result {
@@ -183,7 +189,7 @@ input::-webkit-inner-spin-button {
 .exampleProblem {
   padding-left: 10px;
   margin: 1px;
-  color: rgb(0, 0, 204);
+  color: rgb(82, 82, 255);
 }
 
 .exampleProblem:hover {
