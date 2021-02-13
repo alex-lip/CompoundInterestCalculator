@@ -5,9 +5,9 @@
   <div id="app" class="container-fluid">
     
     <nav class="navbar navbar-light bg-light justify-content-between">
-      <router-link class="navbar-brand" v-bind:to="{ name: 'home' }">
+      <a class="navbar-brand">
         🧮 Margin and Markup Calculator
-      </router-link>
+      </a>
       </nav>
       <router-view />
     
