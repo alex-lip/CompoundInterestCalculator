@@ -3,49 +3,49 @@
     <div class="row mainRow">
       <div class="col-sm-8">
         <div class="row formula">
-          <div class="col-4">
+          <div class="col-5">
             Cost of Goods
             <input type="number" class="inputBox" v-model="cogs1" />
           </div>
           <div class="col-4">
-            Margin <input type="number" class="inputBox" v-model="margin" /> %
+            Margin %<input type="number" class="inputBox" v-model="margin" />
           </div>
-          <div class="col-4 result">Sale Price: {{ cogsMargin }}</div>
+          <div class="col-3 result">Sale Price: {{ cogsMargin }}</div>
         </div>
 
         <div class="row formula">
-          <div class="col-sm-4">
+          <div class="col-5">
             Cost of Goods
             <input type="number" class="inputBox" v-model="cogs2" />
           </div>
-          <div class="col-sm-4">
+          <div class="col-4">
             Sale Price
             <input type="number" class="inputBox" v-model="salePrice1" />
           </div>
-          <div class="col-sm-4 result">Margin: {{ cogsSalePriceMargin }}%</div>
+          <div class="col-3 result">Margin: {{ cogsSalePriceMargin }}%</div>
         </div>
 
         <div class="row formula">
-          <div class="col-sm-4">
+          <div class="col-5">
             Cost of Goods
             <input type="number" class="inputBox" v-model="cogs3" />
           </div>
-          <div class="col-sm-4">
-            Markup <input type="number" class="inputBox" v-model="markup" /> %
+          <div class="col-4">
+            Markup %<input type="number" class="inputBox" v-model="markup" />
           </div>
-          <div class="col-sm-4 result">Sale Price: {{ cogsMarkup }}</div>
+          <div class="col-3 result">Sale Price: {{ cogsMarkup }}</div>
         </div>
 
         <div class="row formula">
-          <div class="col-sm-4">
+          <div class="col-5">
             Cost of Goods
             <input type="number" class="inputBox" v-model="cogs4" />
           </div>
-          <div class="col-sm-4">
+          <div class="col-4">
             Sale Price
             <input type="number" class="inputBox" v-model="salePrice2" />
           </div>
-          <div class="col-sm-4 result">Markup: {{ cogsSalePriceMarkup }}%</div>
+          <div class="col-3 result">Markup: {{ cogsSalePriceMarkup }}%</div>
         </div>
       </div>
       <div class="col-sm-3 formula">
@@ -158,7 +158,7 @@ input::-webkit-inner-spin-button {
 .formula {
   border: 1px solid rgb(172, 172, 172);
   box-shadow: 2px 2px 2px rgb(209, 209, 209);
-  
+  padding: 5px;
   font-size: 18px;
   background-color: white;
   margin: 10px;
