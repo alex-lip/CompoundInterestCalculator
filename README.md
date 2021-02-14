@@ -1,1 +1,1 @@
-# CompoundInterestCalculator
+# Margin and Markup Calculator
