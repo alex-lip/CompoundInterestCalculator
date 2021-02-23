@@ -89,6 +89,96 @@
       </div>
       <div class="col-sm-4"></div>
     </div>
+    <div class="row mainRow">
+      <div class="col-sm-8">
+        <h1>Markup Margin Calculator</h1>
+        <p>Profit margin and markup are separate accounting terms that use the same inputs and analyze the same transaction, yet they show different information.</p>
+        <p>Profit margin refers to the revenue a company makes after paying the cost of goods sold (COGS).</p>
+        <p>Markup is the retail price for a product minus its cost.</p>
+        Source: <a href="https://www.investopedia.com/ask/answers/102714/whats-difference-between-profit-margin-and-markup.asp">Investopedia.com</a>
+      </div>
+      <div class="col-sm-4"></div>
+    </div>
+    <div class="row mainRow">
+      <div class="col-sm-8">
+        <h1>Margin Calculator</h1>
+        <p>Profit margin and markup are separate accounting terms that use the same inputs and analyze the same transaction, yet they show different information.</p>
+        <p>Profit margin refers to the revenue a company makes after paying the cost of goods sold (COGS).</p>
+        <p>Markup is the retail price for a product minus its cost.</p>
+        Source: <a href="https://www.investopedia.com/ask/answers/102714/whats-difference-between-profit-margin-and-markup.asp">Investopedia.com</a>
+      </div>
+      <div class="col-sm-4"></div>
+    </div>
+    <div class="row mainRow">
+      <div class="col-sm-8">
+        <h1>How to Calculate Markup</h1>
+        <p>Profit margin and markup are separate accounting terms that use the same inputs and analyze the same transaction, yet they show different information.</p>
+        <p>Profit margin refers to the revenue a company makes after paying the cost of goods sold (COGS).</p>
+        <p>Markup is the retail price for a product minus its cost.</p>
+        Source: <a href="https://www.investopedia.com/ask/answers/102714/whats-difference-between-profit-margin-and-markup.asp">Investopedia.com</a>
+      </div>
+      <div class="col-sm-4"></div>
+    </div>
+    <div class="row mainRow">
+      <div class="col-sm-8">
+        <h1>Profit Margin Calculator</h1>
+        <p>Profit margin and markup are separate accounting terms that use the same inputs and analyze the same transaction, yet they show different information.</p>
+        <p>Profit margin refers to the revenue a company makes after paying the cost of goods sold (COGS).</p>
+        <p>Markup is the retail price for a product minus its cost.</p>
+        Source: <a href="https://www.investopedia.com/ask/answers/102714/whats-difference-between-profit-margin-and-markup.asp">Investopedia.com</a>
+      </div>
+      <div class="col-sm-4"></div>
+    </div>
+    <div class="row mainRow">
+      <div class="col-sm-8">
+        <h1>Gross Margin Calculation</h1>
+        <p>Profit margin and markup are separate accounting terms that use the same inputs and analyze the same transaction, yet they show different information.</p>
+        <p>Profit margin refers to the revenue a company makes after paying the cost of goods sold (COGS).</p>
+        <p>Markup is the retail price for a product minus its cost.</p>
+        Source: <a href="https://www.investopedia.com/ask/answers/102714/whats-difference-between-profit-margin-and-markup.asp">Investopedia.com</a>
+      </div>
+      <div class="col-sm-4"></div>
+    </div>
+    <div class="row mainRow">
+      <div class="col-sm-8">
+        <h1>Calculate Percentage Markup</h1>
+        <p>Profit margin and markup are separate accounting terms that use the same inputs and analyze the same transaction, yet they show different information.</p>
+        <p>Profit margin refers to the revenue a company makes after paying the cost of goods sold (COGS).</p>
+        <p>Markup is the retail price for a product minus its cost.</p>
+        Source: <a href="https://www.investopedia.com/ask/answers/102714/whats-difference-between-profit-margin-and-markup.asp">Investopedia.com</a>
+      </div>
+      <div class="col-sm-4"></div>
+    </div>
+    <div class="row mainRow">
+      <div class="col-sm-8">
+        <h1>Calculate Selling Price</h1>
+        <p>Profit margin and markup are separate accounting terms that use the same inputs and analyze the same transaction, yet they show different information.</p>
+        <p>Profit margin refers to the revenue a company makes after paying the cost of goods sold (COGS).</p>
+        <p>Markup is the retail price for a product minus its cost.</p>
+        Source: <a href="https://www.investopedia.com/ask/answers/102714/whats-difference-between-profit-margin-and-markup.asp">Investopedia.com</a>
+      </div>
+      <div class="col-sm-4"></div>
+    </div>
+    <div class="row mainRow">
+      <div class="col-sm-8">
+        <h1>Calculate Markup Rate</h1>
+        <p>Profit margin and markup are separate accounting terms that use the same inputs and analyze the same transaction, yet they show different information.</p>
+        <p>Profit margin refers to the revenue a company makes after paying the cost of goods sold (COGS).</p>
+        <p>Markup is the retail price for a product minus its cost.</p>
+        Source: <a href="https://www.investopedia.com/ask/answers/102714/whats-difference-between-profit-margin-and-markup.asp">Investopedia.com</a>
+      </div>
+      <div class="col-sm-4"></div>
+    </div>
+    <div class="row mainRow">
+      <div class="col-sm-8">
+        <h1>Calculate Cost from Margin</h1>
+        <p>Profit margin and markup are separate accounting terms that use the same inputs and analyze the same transaction, yet they show different information.</p>
+        <p>Profit margin refers to the revenue a company makes after paying the cost of goods sold (COGS).</p>
+        <p>Markup is the retail price for a product minus its cost.</p>
+        Source: <a href="https://www.investopedia.com/ask/answers/102714/whats-difference-between-profit-margin-and-markup.asp">Investopedia.com</a>
+      </div>
+      <div class="col-sm-4"></div>
+    </div>
   </div>
 </template>
 
